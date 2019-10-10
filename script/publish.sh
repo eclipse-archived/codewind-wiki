@@ -35,9 +35,7 @@ echo "Refreshing '$(pwd)/codewind.wiki' by copying contents from '$(pwd)/codewin
 rm -rf codewind.wiki
 
 # Clone the actual Codewind wiki repository
-#git clone https://github.com/eclipse/codewind.wiki.git
-# Used personal repo for demo 
-git clone https://github.com/josephca/codewind.wiki.git
+git clone https://github.com/eclipse/codewind.wiki.git
 
 # Copy contents from 'codewind-wiki' to 'codewind.wiki' except '.git' and 'script'
 rsync -avrv --exclude=.git --exclude=script codewind-wiki/ codewind.wiki
